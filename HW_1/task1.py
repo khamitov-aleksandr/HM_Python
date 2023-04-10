@@ -4,11 +4,11 @@ print("Task 2")
 # 123 -> 6 (1 + 2 + 3)
 # 100 -> 1 (1 + 0 + 0) |
 three_digit_number = int(input("Enter a three-digit number :"))
-if (three_digit_number > 999) or (three_digit_number < 100):
+if three_digit_number > 999 or three_digit_number < 100:
     print("Sorry, you enter NOT a three-digit number, start again")
 else:
-    first = int(three_digit_number / 100)
-    second = int((three_digit_number % 100) / 10)
+    first = three_digit_number // 100
+    second = three_digit_number % 100 // 10
     third = three_digit_number % 10
     print(first + second + third)
 print("Task 4")
@@ -23,7 +23,7 @@ all_toghether = int(input("How many paper cranes was made? "))
 if not (all_toghether % 6 == 0):
     print("Sorry, you enter wrong number of paper cranes")
 else:
-    petya_or_seryozha = int(all_toghether / 6)
+    petya_or_seryozha = all_toghether // 6
     katya = petya_or_seryozha * 4
     print(petya_or_seryozha, katya, petya_or_seryozha)
 print("Task 6")
@@ -37,7 +37,7 @@ print("Task 6")
 # 385916 -> yes
 # 123456 -> no
 ticket_number = input("Enter your number of ticket: ")
-if (len(ticket_number) < 6) or (len(ticket_number) > 6):
+if len(ticket_number) < 6 or len(ticket_number) > 6:
     print("Sorry, you enter NOT a six digit number, start again")
 else:
     ticket_number = int(ticket_number)
