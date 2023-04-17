@@ -2,6 +2,7 @@
 # and some - coat of arms. Determine the minimum number of coins
 # that must be flipped so that all coins are turned up the same side.
 # Print the minimum number of coins to flip
+
 n = int(input())
 count_zero = 0
 count_one = 0
@@ -29,8 +30,10 @@ for i in range(x):
     for j in range(y):
         if x == i + j and y == i * j:
             print(i, j)
+
 # Problem 14: It is required to print all integer powers of two
 # (that is, numbers of the form 2k) that do not exceed the number N.
+
 n = int(input())
 i = 0
 while 2 ** i <= n:
