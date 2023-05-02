@@ -3,8 +3,8 @@
 # The formula for getting the nth member of the progression is: an = a1 + (n-1) * d.
 # Each number is entered on a new line.
 
-a1 = int(input("Enter : "))
-d = int(input("Enter : "))
-n = int(input("Enter : "))
+a1 = int(input("Enter first element: "))
+d = int(input("Enter difference: "))
+n = int(input("Enter number of elements: "))
 for i in range(n):
     print(a1 + i * d)
